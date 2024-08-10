@@ -28,6 +28,11 @@ alias cf='cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && ec
 alias ssn="sudo shutdown now"
 alias sr="reboot"
 
+#copy shell configs
+alias cb='cp /etc/skel/.bashrc ~/.bashrc && exec bash'
+alias cz='cp /etc/skel/.zshrc ~/.zshrc && echo "Copied."'
+alias cf='cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && echo "Copied."'
+
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
